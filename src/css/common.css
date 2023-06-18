@@ -4,7 +4,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Noto Sans, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
@@ -12,7 +12,88 @@ body {
   line-height: 1.5;
 }
 
+.section{
+ padding: 15px 10px;
+ height: 800px;
+background-image: url(../images/bcgpicture.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.container{
+  width: 700px;
+  padding: 40px 0;
+  border-radius: 20px;
+  margin: 0 auto;
+background-image:  linear-gradient(
+  rgba(238, 238, 238, 0.4),
+  rgba(255, 255, 255, 0.4)
+);
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+.datetime-picker {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.date-input {
+width: 200px;
+height: 40px;
+border-radius: 10px;
+padding: 0 10px;
+border: 1px solid #2b4c95;
+background-color: rgba(255, 255, 255, 0.6);
+}
+
+.start-button{
+  width: 70px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.field{
+  display: flex;
+  width: 92px;
+flex-direction: column;
+align-items: center;
+color: rgb(73, 73, 73);
+}
+
+.value{
+  color: #bdcdde;
+  font-size: 70px;
+  text-shadow: 0 0 0.8px #2b5090,
+  0 0 1.6px #2b5b95,
+  0 0 2.4px #2b489a,
+  0 0 3.2px #2b449f,
+  0 0 4px #2b40a4,
+  0 0 4.8px #2c3da9,
+  0 0 5.6px #2c39ae,
+  0 0 6.4px #2c35b3,
+  0 0 7.2px #2c31b8,
+  0 0 8px #2c2dbd;}
+
+.label{
+  font-family: Noto Sans;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(59, 61, 122);
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2), 
+                 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
